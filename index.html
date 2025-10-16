@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>What Should I Watch?</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <script src="script.js"></script>
+        <center> 
+            <h1>What Should I Watch?</h1>
+            <h2>On Netflix</h2>
+        </center>
+      
+      
+        </header>
+    <div class = "row">
+
+    <div class = "column" >
+        <center>
+
+            <label><b>Movie or TV Show:</b></label>
+            <select id ="type">
+                <option value="movie"> Movie </option>
+                <option value="tv">TV Show</option>
+            </select><br><br>
+
+            <label><b>Rating:</b></label>
+            <select id ="rating">
+                <option value="TV-Y">TV-Y</option>
+              <option value="TV-Y7">TV-Y7</option>
+                <option value="PG">PG</option>
+                <option value="=TV-PG">TV-PG</option>
+                <option value="PG-13">PG-13</option>
+                <option value="TV-14">TV-14</option>
+                <option value="G">G</option>
+                <option value="TV-G">TV-G</option>
+                <option value="TV-MA">TV-MA</option>
+                <option value="R">R</option>
+                <option value="NC-17">NC-17</option>
+            </select><br><br>
+
+        
+            <label><b>Genres:</b></label></br>
+            <label>*Choose as many as you would like!</label>
+        </br>
+            <div class = "column"> 
+          <form>
+            <input type="checkbox" id="0" name="Action & Adventure" value="Action & Adventure">
+            <label for="Action & Adventure"> Action & Adventure</label><br>
+            <input type="checkbox" id="1" name="Children & Family" value="Children & Family">
+            <label for="Children & Family"> Children & Family</label><br>
+            <input type="checkbox" id="2" name="Comedies" value="Comedies">
+            <label for="Comedies"> Comedies</label><br>
+            <input type="checkbox" id="3" name="Crime" value="Crime">
+            <label for="Crime"> Crime</label><br>
+            <input type="checkbox" id="4" name="Documentaries" value="Documentaries">
+            <label for="Documentaries"> Documentaries</label><br>
+            <input type="checkbox" id="5" name="Docuseries" value="Docuseries">
+            <label for="Docuseries"> Docuseries</label><br>
+            <input type="checkbox" id="6" name="Dramas" value="Dramas">
+            <label for="Dramas"> Dramas</label><br>
+            <input type="checkbox" id="7" name="Faith & Spirituality" value="Faith & Spirituality">
+            <label for="Faith & Spirituality"> Faith & Spirituality</label><br>
+            <input type="checkbox" id="8" name="Horror" value="Horror">
+            <label for="Horror"> Horror</label><br>
+        </div>
+        <!-- <div class = "column" style = "background-color: antiquewhite;">  -->
+            <input type="checkbox" id="9" name="Kids' TV" value="Kids' TV">
+      <label for="Kids' TV"> Kids' TV</label><br>
+      <input type="checkbox" id="10" name="Music & Musicals" value="Music & Musicals">
+      <label for="Music & Musicals"> Music & Musicals</label><br>
+      <input type="checkbox" id="11" name="Reality" value="Reality">
+      <label for="Reality"> Reality</label><br>
+      <input type="checkbox" id="12" name="Romantic" value="Romantic">
+      <label for="Romantic"> Romantic</label><br>
+      <input type="checkbox" id="13" name="Sci-Fi & Fantasy" value="Sci-Fi & Fantasy">
+      <label for="Sci-Fi & Fantasy"> Sci-Fi & Fantasy</label><br>
+      <input type="checkbox" id="14" name="Science & Nature" value="Science & Nature">
+      <label for="Science & Nature"> Science & Nature</label><br>
+      <input type="checkbox" id="15" name="Sports" value="Sports">
+      <label for="Sports"> Sports</label><br>
+      <input type="checkbox" id="16" name="Stand-Up Comedy" value="Stand-Up Comedy">
+      <label for="Stand-Up Comedy"> Stand-Up Comedy</label><br>
+      <input type="checkbox" id="17" name="Documentaries" value="Documentaries">
+      <label for="Thrillers"> Thrillers</label><br>
+          </form><br><br>
+          <button onclick="getMatches(document.getElementById('type').value, document.getElementById('rating').value)">What Should I Watch?</button><br><br>
+
+        </center>
+    </div>
+
+    </select>
+
+
+    <div class="column">
+        <center>
+            <header><h2><b>Your Recommended Entertainment:</b></h2></header><br>
+    
+            
+        
+        <div class="arrows">
+        <button onclick="leftClick()" class="inside"> << </button>
+        <p class="inside" id="num"> 1 </p>
+        <button onclick="rightClick()" class="inside">>> </button>
+        </div><br><br>
+
+    
+            <div class="outputBox" id="outputBox">
+                <p id="output"> </p>
+            </div>
+    
+       
+      
+        </center>
+        <script src="utils.js"></script>
+        <script src="script.js"></script>
+      </body>
+    </div>
+
+        
+    </div>
+ 
+
+    
+</body>

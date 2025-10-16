@@ -1,0 +1,43 @@
+column {
+    float: left;
+    width: 50%;
+  }
+  
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button{
+    background-color: rgb(189, 13, 25);
+    padding: 10px;
+    font-family: monospace;
+    border: none;
+  }
+
+.arrows{
+    width: 5%;
+    height: 100%;
+    display: flex;
+  }
+
+  .outputBox{
+    min-height: 200px;
+    font-size: 25px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: rgb(189, 13, 25);
+    padding: 5px;
+  }
+
+  header {
+    background-color: rgb(189, 13, 25);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+    
+  
+  }
