@@ -1,6 +1,7 @@
 # What Should I Watch on Netflix?
 Tells the user what they should watch based on whether they would prefer a movie or TV show, their prefered rating, and the prefered genres.
-Programer: Imogen Elizabeth Fagan
+
+**Programer:** Imogen Elizabeth Fagan
 
 ## User Inputs:
 **Type:** Movie or TV
